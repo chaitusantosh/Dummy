@@ -275,7 +275,7 @@ main>p {
     margin-left: 5px;
 }
 
-#happy #none::after {
+#happy .none::after {
     border: 0;
 }
 
@@ -312,10 +312,10 @@ footer {
     font-size: 18px;
 }
 
-.top {
+#top {
     padding-top: 10px;
 }
 
-#final {
+.final {
     color: #fff;
 }
