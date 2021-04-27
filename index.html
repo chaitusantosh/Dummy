@@ -2,220 +2,226 @@
 <html lang="en">
 
 <head>
-    <title>Layout</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="style.css">
-    <meta charset="UTF-8" lang="en">
+    <title>Responsive</title>
 </head>
 
 <body>
-    <header>
-        <div class="trial-1">
-            <div class="section-1-1">
-                <h2>eStore</h2>
-            </div>
-            <div class="section-1-2">
-                <ul id="list-1">
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Wish List</a></li>
-                    <li><a href="#">Shopping</a></li>
-                    <li><a href="#">Cart</a></li>
-                    <li><a href="#">Checkout</a></li>
-                </ul>
-            </div>
+    <header class="bg-dark">
+        <div class="container text-light d-md-flex justify-content-md-between align">
+            <h1 class="display-4">eStore</h1>
+            <nav class="navbar navbar-expand-md navbar-dark button">
+                <button class="navbar-toggler mb-2" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav try">
+                        <li class="nav-item try">
+                            <a class="nav-link try" href="#">My Account</a>
+                        </li>
+                        <li class="nav-item try">
+                            <a class="nav-link try" href="#">Wish List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link try" href="#">Shopping</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link try" href="#">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link try" href="#">Checkout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
-    <div class="trial-1 trial-2">
-        <div class="section-2-1">
-            <ul id="list-2">
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Protective Wear</a></li>
-                <li><a href="#">Footwear</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Friday Casual</a></li>
-            </ul>
-        </div>
-        <div class="section-2-2">
-            <form>
-                <input id="form-1" type="search" name="search" placeholder="Search for Products & brands">
-            </form>
+    <div class="container text-dark d-md-flex justify-content-md-between align">
+        <nav class="navbar navbar-expand-md navbar-dark button">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#second_nav">
+              <span class="navbar text-warning">Menu</span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="second_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Protective Wear</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Footwear</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Friday Casual</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <form class="mt-md-2 pt-md-1 mb-3">
+            <input type="nav" placeholder="Search for Products" class="p-2">
+        </form>
+
+    </div>
+
+
+    <div class="ball">
+        <div class="container">
+            <div class="row">
+                <img class="small col-lg-4 mt-3 mt-sm-3 m-lg-3 col-sm-5 m-sm-auto mb-3 mb-sm-3" src="mask.png" alt="mask">
+                <h1 class="col-lg-3 m-lg-auto col-sm-5 m-sm-auto d-flex justify-content-center justify-content-lg-center">Stay Home,<br>Stay Safe</h1>
+                <div class="col-lg-4 m-lg-auto d-flex justify-content-center justify-content-sm-start">
+                    <div class="middle mt-3 text-center text-lg-start">
+                        <p>Contactless Deliveries</p>
+                        <p>All delivery staff trained in COVID-19 <br/>preventive measures</p>
+                        <p>All delivery & warehouse staff are equipped with <br/>medical-grade hand Sanitizers</p>
+                        <p>All warehouses staff undergo daily mandatory <br/>thermal temperature scanning</p>
+                        <p>No Deliveries in 'highly affected' areas</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="main-1">
-        <div class="section-3-1">
-            <img src="Images/mask.png" alt="Mask">
-            <h1>STAY HOME,<br/>SAY SAFE.</h1>
-        </div>
-        <div class="section-3-2">
-            <p>Contactless Deliveries</p>
-            <p>All delivery staff trained in COVID-19 <br/>preventive measures</p>
-            <p>All delivery & warehouse staff are equipped with <br/>medical-grade hand Sanitizers</p>
-            <p>All warehouses staff undergo daily mandatory <br/>thermal temperature scanning</p>
-            <p>No Deliveries in 'highly affected' areas</p>
+
+
+    <div class="container mt-3 mb-2 effect">
+        <h2>Deals of the day</h2>
+        <div class="container row d-flex justify-content-between">
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg center">
+                <img class="image image-1" src="Images/Sports.jpg" alt="SportsDress">
+                <p>Sports and Fitness Gear<br>Upto 80% off</p>
+            </div>
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg center">
+                <img class="image image-1" src="Images/Jeans3.jpg" alt="Jeans">
+                <p>Branded Jeans<br>Upto 40%</p>
+            </div>
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg center">
+                <img class="image image-1" src="Images/Tshirt1.jpg" alt="Tshirt">
+                <p>Branded T-Shirts<br>Upto 60% off</p>
+            </div>
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg center">
+                <img class="image image-1" src="Images/Sportsequipment.jpg" alt="Sportsequipment">
+                <p>Sports and Fitness Gear<br>Upto 50% off</p>
+            </div>
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg center">
+                <img class="image image-1" src="Images/Babyboy.jpg" alt="Babyboy">
+                <p>Baby Boy T-Shirts<br>Upto 40% off</p>
+            </div>
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg center">
+                <img class="image image-1" src="Images/Babygirl.jpg" alt="Babygirl">
+                <p>Baby Girl T-Shirts<br>Upto 50% off</p>
+            </div>
         </div>
     </div>
-    <main>
-        <p><span>D</span>eals of the day</p>
-        <div class="trial-1 friend">
-            <div class="together">
-                <a class="hen" href="https://www.cure.fit/store/gear">
-                    <img src="Images/Sports.jpg" alt="SportsDress">
-                    <p>Sports and Fitness Gear<br>Upto 80% off</p>
-                </a>
-            </div>
-            <div class="together">
-                <a class="hen" href="https://jadeblue.com/casuals/bottom-wear/jeans">
-                    <img src="Images/Jeans3.jpg" alt="Jeans">
-                    <p>Branded Jeans<br>Upto 50% off</p>
-                </a>
-            </div>
-            <div class="together">
-                <a class="hen" href="https://www.myntra.com/van-heusen?f=Categories%3ATshirts%3A%3AGender%3Amen%20women%2Cwomen&plaEnabled=false">
-                    <img src="Images/Tshirt1.jpg" alt="Tshirt">
-                    <p>Branded T-Shirts<br>Upto 60% off</p>
-                </a>
-            </div>
-            <div class="together">
-                <a class="hen" href="https://www.sportsjam.in/">
-                    <img src="Images/Sportsequipment.jpg" alt="Sportsequipment">
-                    <p>Sports and Fitness Gear<br>Upto 50% off</p>
-                </a>
-            </div>
-            <div class="together">
-                <a class="hen" href="https://www.firstcry.com/tops-and-t-shirts/6/26?scat=26&gender=boy,unisex&sort=bestseller&ref2=menu_dd_boy-fashion_t-shirts_H#scat=26@@@@@@@@@@1@0@20@@@@@@@@@@&rating=&sort=bestseller&&vi=three&pmonths=&cgen=&cat=6&skills=&measurement=&material=&Color=&Age=&gender=both,male&ser=&premium=&deliverytype=&PageNo=4&scrollPos=9960&pview=&tc=9367">
-                    <img src="Images/Babyboy.jpg" alt="Babyboy">
-                    <p>Baby Boy T-Shirts<br>Upto 40% off</p>
-                </a>
-            </div>
-            <div class="together">
-                <a class="hen" href="https://www.firstcry.com/tops-and-t-shirts/6/26?scat=26&gender=girl,unisex&sort=bestseller&ref2=menu_dd_girl-fashion_tops-and-t-shirts_H#scat=26@@@@@@@@@@1@0@20@@@@@@@@@@&rating=&sort=bestseller&&vi=three&pmonths=&cgen=&cat=6&skills=&measurement=&material=&Color=16&Age=&gender=both,female&ser=&premium=&deliverytype=&PageNo=3&scrollPos=6823.2001953125&pview=&tc=1534">
-                    <img src="Images/Babygirl.jpg" alt="Babygirl">
-                    <p>Baby Girl T-Shirts<br>Upto 550% off</p>
-                </a>
-            </div>
-        </div>
-        <p><span>F</span>ashion Categories</p>
-        <div class="pit">
-            <a class="split" href="https://www.fabindia.com/clothing/men-kurtas">
+    <div class="container mb-2 effect">
+        <h2>Fashion Categories</h2>
+        <div class="container row d-flex justify-content-between">
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg-2 split">
                 <img class="image" src="Images/Kurta.jpg" alt="Kurta">
-                <p>Kurtas</p>
-            </a>
-            <a class="split" href="https://www.louisphilippe.com/category/men/shirts-83?source=menu&page=2&orderway=asc&orderby=popular">
+                <p class="fs-5">Kurtas</p>
+            </div>
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg-2 split">
                 <img class="image" src="Images/Formalshirt.jpg" alt="Formalshirt">
-                <p>Shirts</p>
-            </a>
-            <a class="split" href="https://thehouseofrare.com/collections/rr-solid-trouser">
+                <p class="fs-5">Shirts</p>
+            </div>
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg-2 split">
                 <img class="image" src="Images/Pant.jpg" alt="Trouser">
-                <p>Pants</p>
-            </a>
-            <a class="split" href="https://www.thesouledstore.com/men/t-shirts">
+                <p class="fs-5">Pants</p>
+            </div>
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg-2 split">
                 <img class="image" src="Images/Tshirt.jpg" alt="Tshirt">
-                <p>TShirts</p>
-            </a>
-            <a class="split" href="https://www.ajio.com/b/woodland?query=%3Arelevance%3Al1l3nestedcategory%3AMen%20-%20Sneakers%20%26%20Sports%20Shoes%3Al1l3nestedcategory%3AMen%20-%20Casual%20Shoes&gclid=Cj0KCQjwpdqDBhCSARIsAEUJ0hPDfqQQx9yTsLQx1pnyPUhJ7GXAfiTo5hOipWuqzhrS9Km6GzH1UtAaAu0UEALw_wcB&gridColumns=3">
-                <img class="image" src="Images/Shoes.jpg" alt="Shoes">
-                <p>Shoes</p>
-            </a>
-            <a class="split" href="https://thehouseofrare.com/collections/rr-checks-shirts">
-                <img class="image" src="Images/Shirt.jpg" alt="CasualShirt">
-                <p>Casual Shirts</p>
-            </a>
-            <a class="split" href="https://www.levi.in/men/clothing/jeans">
-                <img class="image" src="Images/Jeans.jpg" alt="Jeans">
-                <p>Jeans</p>
-            </a>
-            <a class="split" href="https://www.utsavfashion.com/indowestern/tops">
-                <img class="image" src="Images/Tops.jpg" alt="Womentops">
-                <p>Tops</p>
-            </a>
+                <p class="fs-5">T-Shirts</p>
+            </div>
         </div>
-    </main>
-    <div id="happy">
-        <p>Adidas</p>
-        <p>Arrow</p>
-        <p>Fila</p>
-        <p>Online Shopping</p>
-        <p>Nike</p>
-        <p>Pepe Jeans</p>
-        <p>Puma</p>
-        <p>United Colors of Benetton</p>
-        <p>Fastrack</p>
-        <p>Shorts</p>
-        <p>Being Human</p>
-        <p>Skirts</p>
-        <p class="none">Woodland</p>
-        <p>Supra Dresses Clothing</p>
-        <p>Jewellery</p>
-        <p>T-Shirts</p>
-        <p>Shoes</p>
-        <p>Bags</p>
-        <p>Watches</p>
-        <p>Caps</p>
-        <p>Shirts</p>
-        <p>Backpacks</p>
-        <p>Flip Flops</p>
-        <p>Sun Glasses</p>
-        <p>Kurtas</p>
-        <p>Jackets</p>
-        <p class="none">Skechers</p>
-        <p>Saree</p>
-        <p>Sandals</p>
-        <p>Puma Tshirts</p>
-        <p>Woodland Shoes</p>
-        <p>Titan Watches</p>
-        <p>Fastrack Watches</p>
-        <p>Wrangler Shirts</p>
-        <p>Adidas Tshirts</p>
-        <p>Nike Shoes</p>
-        <p class="none">Roadster Shirts</p>
-        <p>Casual Shoes</p>
-        <p>Running Shoes</p>
-        <p>Nike Sports Shoes</p>
-        <p>Jeans</p>
-        <p>Being Human</p>
-        <p>Tshirts</p>
-        <p>Converse Shoes</p>
-        <p>Cricket Shoes</p>
     </div>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-1">
-                <h3>My Account</h3>
-                <p>Orders</p>
-                <p>Returns/Refunds</p>
-                <p>Track Order</p>
-                <p>Frequently Asked Questions</p>
+    <div class="container mb-2 effect">
+        <div class="container row d-flex justify-content-between">
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg-2 split">
+                <img class="image" src="Images/Shoes.jpg" alt="Shoes">
+                <p class="fs-5">Shoes</p>
             </div>
-            <div class="footer-1">
-                <h3>Policies</h3>
-                <p>Payment Options</p>
-                <p>Terms &amp; Conditions of Use</p>
-                <p>Terms &amp; Conditions of Membership Program</p>
-                <p>Other Terms &amp; Conditions</p>
-                <p>Returns &amp; Exchange Policy</p>
-                <p>Shipping Policy</p>
-                <p>Privacy Policy</p>
-                <p>Safety Checklist</p>
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg-2 split">
+                <img class="image" src="Images/Shirt.jpg" alt="CasualShirt">
+                <p class="fs-5">Casual Shirts</p>
             </div>
-            <div class="footer-1">
-                <h3>Contact Us</h3>
-                <p>Customer Support</p>
-                <p>Store Locators</p>
-                <p>Help Center</p>
-                <h3 id="top">About Us</h3>
-                <p>Official Brand Store</p>
-                <p>About Us</p>
-                <p>Careers</p>
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg-2 split">
+                <img class="image" src="Images/Jeans.jpg" alt="Jeans">
+                <p class="fs-5">Jeans</p>
             </div>
-            <div class="footer-1">
-                <h3>Social</h3>
-                <p><a class="final" href="https://www.facebook.com/">Facebook</a></p>
-                <p><a class="final" href="https://www.youtube.com">Youtube</a></p>
-                <p><a class="final" href="https://www.twitter.com">Twitter</a></p>
+            <div class="col-sm-5 me-sm-2 mb-3 col-lg-2 split">
+                <img class="image" src="Images/Tops.jpg" alt="Womentops">
+                <p class="fs-5">Tops</p>
             </div>
         </div>
-    </footer>
+    </div>
+    <div class="container mt-2 mb-2" id="space">
+        <p>Adidas | Arrow | Fila | Online Shopping | Nike | Pepe Jeans | Puma | United Colors of Benetton | Fastrack | Shorts | Being Human | Skirts | Woodland | Supra Dresses Clothing | Jewellery | T-Shirts | Shoes | Bags | Watches | Caps | Shirts | Backpacks
+            | Flip Flops | Sun Glasses | Kurtas | Jackets | Skechers | Saree | Sandals | Puma | Tshirts | Woodland Shoes | Titan Watches | Fastrack Watches | Wrangler Shirts | Adidas Tshirts | Nike Shoes | Roadster Shirts | Casual Shoes | Running Shoes
+            | Nike Sports Shoes | Jeans | Being Human Tshirts | Converse Shoes | Cricket Shoes</p>
+    </div>
+    <section class="boy text-light">
+        <div class="container">
+            <div class="row pt-4 pb-4 mt-2">
+                <div class="col-md-3">
+                    <h3>My Account</h3>
+                    <p>Orders</p>
+                    <p>Returns/Refunds</p>
+                    <p>Track Order</p>
+                    <p>Frequently Asked Questions</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Policies</h3>
+                    <p>Payment Options</p>
+                    <p>Terms &amp; Conditions of Use</p>
+                    <p>Terms &amp; Conditions of Membership Program</p>
+                    <p>Other Terms &amp; Conditions</p>
+                    <p>Returns &amp; Exchange Policy</p>
+                    <p>Shipping Policy</p>
+                    <p>Privacy Policy</p>
+                    <p>Safety Checklist</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contact Us</h3>
+                    <p>Customer Support</p>
+                    <p>Store Locators</p>
+                    <p>Help Center</p>
+                    <h3>About Us</h3>
+                    <p>Official Brand Store</p>
+                    <p>About Us</p>
+                    <p>Careers</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Social</h3>
+                    <p><a class="link-light" href="https://www.facebook.com/">Facebook</a></p>
+                    <p><a class="link-light" href="https://www.youtube.com">Youtube</a></p>
+                    <p><a class="link-light" href="https://www.twitter.com">Twitter</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
